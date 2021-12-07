@@ -235,12 +235,6 @@ body {
 }
 
 /*    FOOTER */
-.footer {
-  position:absolute;
-  bottom:0;
-  width:100%;
-}
-
 #footer-conteiner {
   text-align: center;
   background-color: rgb(27, 27, 27);
