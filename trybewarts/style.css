@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  font-size: 10px;
+}
+
+body {
+  background-color: rgb(239, 239, 239);
+}
+
+/*    HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(50, 167, 145);
+}
+
+.trybewarts-header-logo {
+  width: 6rem;
+}
+
+.trybewarts-login {
+  display: flex;
+  gap: 5px;
+}
+
+#trybewarts-header-title {
+  font-size: 3.6rem;
+  color: white;
+}
+
+
+.header-login-password {
+  border: 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+#login-button {
+  background-color: rgb(81, 59, 131);
+  color: white;
+  padding: 0 55px;
+}
+
+
+/*  MAIN */
+#main-conteiner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#evaluation-form > h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#name-lastname {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px;
+}
+
+#email-house {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 10px;
+}
+
+.first-wrapper {
+  border: 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: white;
+  flex-grow: 2;
+}
+
+#casa-dois {
+  width: 50%;
+}
+
+#casa-dois select {
+  width: 90%;
+}
+
+#casa {
+  font-size: 13px;
+}
+
+#family-content {
+  display: flex;
+  padding: 30px 40px;
+  margin: 20px 0;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  justify-content: space-between;
+}
+
+#family {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#label-family {
+  font-size: 18px;
+}
+
+.radio-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.radio-buttons > input , label {
+  font-size: 18px;
+}
+
+#checkbox-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#checkbox-content div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+#rate {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  justify-content: center;
+}
+
+#label-rate {
+  font-size: 18px;
+}
+
+#rate div {
+  display: flex;
+  gap: 3px;
+}
+
+.radio-rate {
+  display: flex;
+  align-items: center;
+}
+
+#textarea-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 5px;
+}
+
+.textarea {
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+#textarea {
+  resize: none;
+}
+
+#infos {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 20px 0;
+}
+
+#label-infos {
+  font-size: 13px;
+}
+
+#counter {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-size: 15px;
+}
+
+#submit-btn {
+  background-color: rgb(81, 59, 131);
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border: 0;
+  padding: 15px;
+  border-radius: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#submit-btn:disabled {
+  background-color: gray;
+}
+
+#ul-container {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#ul-container li {
+  font-size: 20px;
+  list-style: none;
+  text-align: center;
+  font-weight: 700;
+}
+
+/*    FOOTER */
+#footer-conteiner {
+  text-align: center;
+  background-color: rgb(27, 27, 27);
+  color: wheat;
+  padding: 15px 0;
+}
+
+#footer-conteiner h3 {
+  font-size: 18px;
+}
+
+@media screen and ( max-width : 1100px ) {
+
+  #main-conteiner {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+
+@media screen and ( max-width : 850px ) {
+
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}
+
+@media screen and ( max-width : 685px ) {
+
+  #evaluation-form {
+    width: 100%;
+  }
+
+  #family {
+    width: 35%;
+  }
+
+  #casa-dois {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #checkbox-content {
+    width: 65%;
+    align-items: center;
+  }
+
+  #checkbox-content > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and ( max-width : 600px ) {
+
+  .trybewarts-login {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-login-password {
+    width: 80vw;
+  }
+
+  #login-button {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #trybewarts-forms-logo {
+    width: 100%;
+  }
+
+  #name-lastname {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  #email-house {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #casa-dois {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    gap: 15px;
+    flex-grow: 1;
+  }
+
+  #casa {
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 20px;
+  }
+
+  .first-wrapper {
+    padding: 15px 10px;
+    width: 80%;
+    font-size: 14px;
+  }
+
+  #family-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    padding: 20px 0;
+    margin: 30px 0;
+  }
+
+  #family {
+    width: 80%;
+  }
+
+  #label-family {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  #label-content {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .radio-buttons {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #checkbox-content {
+    width: 80%;
+    text-align: center;
+  }
+
+  #checkbox-content > div {
+    gap: 10px;
+  }
+
+  #rate {
+    margin: 10px 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #label-rate {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  #textarea-content {
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .textarea {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  #textarea {
+    width: 90%;
+  }
+
+  #counter {
+    right: 30px;
+  }
+
+  #infos {
+    justify-content: center;
+    width: 100%;
+  }
+
+}
