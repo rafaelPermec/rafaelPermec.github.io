@@ -235,10 +235,13 @@ body {
 }
 
 /*    FOOTER */
-#footer-conteiner {
+footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+#footer-conteiner {
   text-align: center;
   background-color: rgb(27, 27, 27);
   color: wheat;
