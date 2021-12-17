@@ -51,7 +51,6 @@ function pintaPixel(event) {
 }
 function voltaPixel(event) {
   const vetorSelected = document.querySelector('.selected');
-  const capturaBackground = window.getComputedStyle(vetorSelected).backgroundColor;
   for (let i = 0; i < vetorPixel.length; i += 1) {
     if (event.target === vetorPixel[i]) {
       vetorPixel[i].style.backgroundColor = white;
