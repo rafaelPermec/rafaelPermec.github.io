@@ -50,13 +50,13 @@ function pintaPixel(event) {
   }
 }
 function voltaPixel(event) {
-  const vetorSelected = document.querySelector('.selected');
   for (let i = 0; i < vetorPixel.length; i += 1) {
     if (event.target === vetorPixel[i]) {
-      vetorPixel[i].style.backgroundColor = 'white';
+      vetorPixel[i].style.backgroundColor = 'rgb(255, 255, 255)';
     }
   }
-}
+};
+
 function paintPixel() {
   for (let i = 0; i < vetorPixel.length; i += 1) {
     vetorPixel[i].addEventListener('click', pintaPixel);
