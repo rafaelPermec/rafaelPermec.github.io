@@ -45,13 +45,23 @@ function pintaPixel(event) {
   const capturaBackground = window.getComputedStyle(vetorSelected).backgroundColor;
   for (let i = 0; i < vetorPixel.length; i += 1) {
     if (event.target === vetorPixel[i]) {
-      vetorPixel[i].style.backgroundColor.toggle = capturaBackground;
+      vetorPixel[i].style.backgroundColor = capturaBackground;
+    }
+  }
+}
+function voltaPixel(event) {
+  const vetorSelected = document.querySelector('.selected');
+  const capturaBackground = window.getComputedStyle(vetorSelected).backgroundColor;
+  for (let i = 0; i < vetorPixel.length; i += 1) {
+    if (event.target === vetorPixel[i]) {
+      vetorPixel[i].style.backgroundColor = white;
     }
   }
 }
 function paintPixel() {
   for (let i = 0; i < vetorPixel.length; i += 1) {
     vetorPixel[i].addEventListener('click', pintaPixel);
+    vetorPixel[i].addEventListener('dblclick', voltaPixel)
   }
 }
 paintPixel();
