@@ -23,7 +23,7 @@ function classSelected(event) {
   const vetor = document.getElementsByClassName('color');
   for (let i = 0; i < vetor.length; i += 1) {
     if (event.target === vetor[i]) {
-      vetor[i].classList.add('selected');
+      vetor[i].classList.toggle('selected');
     } else {
       vetor[i].classList.remove('selected');
     }
