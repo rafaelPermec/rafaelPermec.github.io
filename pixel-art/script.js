@@ -53,7 +53,7 @@ function voltaPixel(event) {
   const vetorSelected = document.querySelector('.selected');
   for (let i = 0; i < vetorPixel.length; i += 1) {
     if (event.target === vetorPixel[i]) {
-      vetorPixel[i].classList.remove('selected');
+      vetorPixel[i].style.backgroundColor = 'white';
     }
   }
 }
