@@ -23,7 +23,7 @@ function classSelected(event) {
   const vetor = document.getElementsByClassName('color');
   for (let i = 0; i < vetor.length; i += 1) {
     if (event.target === vetor[i]) {
-      vetor[i].classList.toggle('selected');
+      vetor[i].classList.add('selected');
     } else {
       vetor[i].classList.remove('selected');
     }
@@ -45,7 +45,7 @@ function pintaPixel(event) {
   const capturaBackground = window.getComputedStyle(vetorSelected).backgroundColor;
   for (let i = 0; i < vetorPixel.length; i += 1) {
     if (event.target === vetorPixel[i]) {
-      vetorPixel[i].style.backgroundColor = capturaBackground;
+      vetorPixel[i].style.backgroundColor.toggle = (capturaBackground);
     }
   }
 }
