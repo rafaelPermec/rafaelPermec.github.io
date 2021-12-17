@@ -60,7 +60,7 @@ function voltaPixel(event) {
 function paintPixel() {
   for (let i = 0; i < vetorPixel.length; i += 1) {
     vetorPixel[i].addEventListener('click', pintaPixel);
-    vetorPixel[i].addEventListener('dblclick', voltaPixel)
+    vetorPixel[i].addEventListener('dblclick', voltaPixel);
   }
 }
 paintPixel();
