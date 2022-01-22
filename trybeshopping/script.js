@@ -64,29 +64,29 @@ function deleteCartItems(event) {
 }
 
 const savedCartItemsOnStage = () => {
-  const input = JSON.parse(getSavedCartItems());
-  const arrayStorage = input.forEach((element) => {
+  // const input = JSON.parse(getSavedCartItems());
+  // const arrayStorage = input.forEach((element) => {
 
-    const split1 = element.split(':');
-    const splitID = split1[1].split('<');
-    const splitNAME = splitID[2].split('>');
-    const splitPRICE = splitID[4].split('>');
-    const price = splitPRICE[1].split('$');
-    const splitIMG = split1[2].split('//');
-    const img = splitIMG[1].split('.jpg');
+  //   const split1 = element.split(':');
+  //   const splitID = split1[1].split('<');
+  //   const splitNAME = splitID[2].split('>');
+  //   const splitPRICE = splitID[4].split('>');
+  //   const price = splitPRICE[1].split('$');
+  //   const splitIMG = split1[2].split('//');
+  //   const img = splitIMG[1].split('.jpg');
 
-    const obj = {
-          sku: splitID[0].trim(),
-          name: splitNAME[1].trim(),
-          salePrice: price[1], 
-          image: `${img}.jpg`,
-    };
+  //   const obj = {
+  //         sku: splitID[0].trim(),
+  //         name: splitNAME[1].trim(),
+  //         salePrice: price[1], 
+  //         image: `${img}.jpg`,
+  //   };
 
-    return obj;
+  //   return obj;
 
-  });
-  const exit = arrayStorage.forEach((event) => createCartItemElement(event));
-  return exit;
+  // });
+  // const exit = arrayStorage.forEach((event) => createCartItemElement(event));
+  // return exit;
 };
 
 const cartItemClickListener = async (sku) => {
