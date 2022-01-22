@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+  font-family: Epilogue, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+.header {
+  position: relative;
+  background-color: rgb(3, 52, 45);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 60px;
+}
+
+.container-title {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 78%;
+}
+
+.search {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 15px;
+}
+
+.material-icons:nth-of-type( 1 ) {
+  color: rgb(10, 118, 79);
+  cursor: pointer;
+  transform: translateX(-30px);
+}
+
+.title {
+  color: rgb(221, 221, 221);
+  font-size: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.container-cartTitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: rgb(10, 118, 79);
+  flex-basis: 62%;
+  height: 100%;
+  margin-left: 30px;
+}
+
+.container-cartTitle span {
+  z-index: 1;
+}
+
+.container-cartTitle:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 61.5%;
+  width: 39.5%;
+  height: 15px;
+  background: rgb(10, 118, 79);
+  transform: skew(-45deg);
+  z-index: 0;
+}
+
+.container-cartTitle:before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 61.5%;
+  width: 39.5%;
+  height: 15px;
+  background: rgb(10, 118, 79);
+  transform: skew(45deg);
+  z-index: 0;
+}
+
+.container-cartTitle .cart__title {
+  color: white;
+  font-size: 20px;
+  padding-left: 35px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.title strong {
+  color: white;
+}
+
+@keyframes spin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading__container {
+  display: block;
+  margin: auto;
+}
+
+.loading__img {
+  width: 2rem;
+  height: 2rem;
+  border: 5px solid rgb(146, 146, 146);
+  border-top: 6px solid rgb(10, 118, 79);
+  border-radius: 100%;
+  margin: auto;
+  animation: spin 1s infinite ease;
+}
+
+.loading {
+  margin: 15px;
+}
+
+.items {
+  display: flex;
+  flex-basis: 70%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+  height: 89vh;
+  overflow-y: scroll;
+}
+
+.container__logo {
+  display: none;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  animation: bateu 2s infinite alternate-reverse ease-in-out;
+}
+
+.container__logo.trybe__logo {
+  display: flex;
+}
+
+.logo__trybeshopping {
+  color: rgb(3, 52, 45);
+  text-align: center;
+  font-size: 80px;
+  margin-top: 10px;
+}
+
+@keyframes bateu {
+
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scale(1);
+  }
+
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 5px;
+  width: 200px;
+  border: 2px solid rgb(234, 234, 233);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.item .item__sku {
+  display: none;
+}
+
+.item .item__title {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 15px;
+  text-align: center;
+}
+
+.item .item__image {
+  width: 100%;
+}
+
+.item .item__add {
+  cursor: pointer;
+  margin: 0;
+  padding: 10px;
+  border: none;
+  background-color: rgb(10, 118, 79);
+  color: aliceblue;
+  border-radius: 15px;
+}
+
+.cart {
+  display: flex;
+  flex-basis: 35.5%;
+  flex-flow: column wrap;
+  background-color: rgb(236, 236, 236);
+  height: 110vh;
+}
+
+.cart .cart__items {
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.cart__item {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 15px;
+  padding: 15px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.cart__itemDIV {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.cart__itemID {
+  margin: 5px;
+}
+
+.cart__itemNAME {
+  margin: 5px;
+}
+
+.cart__itemPRICE {
+  margin: 5px;
+  font-weight: 800;
+}
+
+.cart__itemIMG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  width: 5rem;
+  border-radius: 100%;
+}
+
+.cart__item:hover {
+  color: white;
+  background-color: rgb(10, 118, 79);
+  border-radius: 15px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.total-price {
+  font-weight: 600;
+}
+
+.empty-cart {
+  width: 170px;
+  height: 35px;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(10, 118, 79);
+  color: aliceblue;
+  border-radius: 15px;
+}
