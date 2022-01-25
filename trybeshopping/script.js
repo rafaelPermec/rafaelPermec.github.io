@@ -23,7 +23,7 @@ const addSaveCartItem = () => {
   const stringItems = Array.from(items).map((element) =>
   element.innerHTML);
   const exit = JSON.stringify(stringItems);
-  return saveCartItems(exit);
+  return saveCartItems(exit)
 };
 
 const priceCounter = async () => {
@@ -64,29 +64,27 @@ function deleteCartItems(event) {
 }
 
 const savedCartItemsOnStage = () => {
-  // const input = JSON.parse(getSavedCartItems());
-  // const arrayStorage = input.forEach((element) => {
+  const input = JSON.parse(getSavedCartItems());
 
-  //   const split1 = element.split(':');
-  //   const splitID = split1[1].split('<');
-  //   const splitNAME = splitID[2].split('>');
-  //   const splitPRICE = splitID[4].split('>');
-  //   const price = splitPRICE[1].split('$');
-  //   const splitIMG = split1[2].split('//');
-  //   const img = splitIMG[1].split('.jpg');
+  const arrayStorage = input.map((element) => {
 
-  //   const obj = {
-  //         sku: splitID[0].trim(),
-  //         name: splitNAME[1].trim(),
-  //         salePrice: price[1], 
-  //         image: `${img}.jpg`,
-  //   };
+  const split1 = element.split('">');
+  const splitID1 = split1[2].split('</p');
+  const splitID = splitID1[0].split(':')[1].trim();
+  const splitNAME = split1[3].split('</p')[0].trim();
+  const splitPRICE = split1[4].split('</p')[0].split('$')[1].trim();
+  const splitIMG = split1[4].split('"')[3].trim()
+  const obj = {
+    sku: splitID,
+    name: splitNAME,
+    salePrice: splitPRICE, 
+    image: splitIMG,
+     };
 
-  //   return obj;
-
-  // });
-  // const exit = arrayStorage.forEach((event) => createCartItemElement(event));
-  // return exit;
+  return obj;
+  });
+  const exit = arrayStorage.forEach((event) => createCartItemElement(event));
+  return exit;
 };
 
 const cartItemClickListener = async (sku) => {
