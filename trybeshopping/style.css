@@ -232,6 +232,9 @@ body {
   padding: 15px;
   list-style: none;
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.7s;
+  border-radius: 15px;
 }
 
 .cart__itemDIV {
@@ -244,6 +247,7 @@ body {
 
 .cart__itemID {
   margin: 5px;
+  font-size: 10px;
 }
 
 .cart__itemNAME {
@@ -265,9 +269,9 @@ body {
 }
 
 .cart__item:hover {
-  color: white;
-  background-color: rgb(10, 118, 79);
-  border-radius: 15px;
+  background-color: rgb(226, 224, 224);
+  border-radius: 50px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .price {
