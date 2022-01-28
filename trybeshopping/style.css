@@ -274,7 +274,7 @@ body {
 }
 
 .cart__item:hover {
-  background-color: rgb(226, 224, 224);
+  background-color: rgba(226, 224, 224, 0.2);
   border-radius: 50px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
