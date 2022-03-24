@@ -1,11 +1,11 @@
 -----
 
-### Trivia Game!
+# Trivia Game!
 
 Esse jogo de Trivia foi desenvolvido através do API de [Quiz](https://opentdb.com/api.php?amount=5&token=${seu-token-aqui}) da OpenTDB para um projeto do curso de Engenharia de Software FullStack da [Trybe](https://www.betrybe.com/), dentro da Turma [XP](https://www.xpinc.com/).
 
 Aqui, aplicamos nosso conhecimento de React, utilizando metodos de gerenciamento de estados com Redux, além de praticar nossos conhecimentos em manipulação de banco de dados, aplicando metodologias e frameworks externos, que trabalham paralelamente com o projeto, como o [Gravatar](https://br.gravatar.com/site/implement/images/) e o [CryptoJS](https://github.com/brix/crypto-js).
 
-# Enfiam, boas vindas ao repositório do projeto de Trivia!
+### Enfim, boas vindas ao repositório do projeto de Trivia!
 
 -----
