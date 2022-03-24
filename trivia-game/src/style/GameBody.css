@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap') ;
+
+* {
+  box-sizing: border-box;
+  font-family: Montserrat , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header_main_wrapper {
+  background-color: black;
+  color: aliceblue;
+  padding: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.game_wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.game_timer {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 2rem;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.game_timer .timer_icon {
+  animation: shake infinite 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  font-size: 5rem;
+}
+
+@keyframes shake {
+
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.game_box {
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 5px 10px 20px 8px rgb(102, 102, 102);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem;
+  width: 70rem;
+
+}
+
+.game_answer_btn {
+  align-items: center;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  margin: 30px auto;
+  max-width: 780px;
+  width: 100%;
+
+}
+
+.game_answer_btn button {
+  background: rgb(122, 122, 122);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  height: 64px;
+  max-width: 360px;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.game_answer_btn button:hover {
+  box-shadow: 5px 5px 30px 3px rgba(161, 161, 161, 0.65);
+}
+
+.next_btn .game_next_btn {
+  align-items: center;
+  background-color: rgb(65, 34, 94);
+  border: none;
+  border-radius: 100%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 2rem;
+  justify-items: center;
+  padding: 1rem;
+  text-align: center;
+  transition: ease-in-out 1s;
+}
+
+.game_answer_btn .correct_click {
+  background-color: rgb(36, 90, 50);
+}
+
+.game_answer_btn .wrong_click {
+  background-color: rgb(92, 35, 35);
+}
+
+.game_next_btn_text {
+  font-size: 1rem;
+  opacity: 0;
+  position: absolute;
+}
+
+.game_next_btn:hover {
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px 3px rgba(161, 161, 161, 0.65);
+  transition: expansion ease-in-out 1s;
+  width: 10rem;
+}
+
+.next_btn .game_next_btn:hover .game_next_btn_text {
+  opacity: 1;
+  transform: translateX(2.5rem);
+  transition: ease-in 0.5s;
+}
+
+@keyframes expansion {
+
+  from {
+    border-radius: 100%;
+    width: 1rem;
+  }
+
+  to {
+    border-radius: 15px;
+    width: 10rem;
+  }
+
+}
+
