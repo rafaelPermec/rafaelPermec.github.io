@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap') ;
+
+* {
+  box-sizing: border-box;
+  font-family: Montserrat , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback_wrapper {
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 5px 10px 20px 8px rgb(102, 102, 102);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 10rem;
+  padding: 3rem;
+  width: 50rem;
+}
+
+.feedback_wrapper h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.feedback_btn {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.feedback_btn [ type = 'button' ] {
+  align-items: center;
+  background-color: rgb(65, 34, 94);
+  border: none;
+  border-radius: 100%;
+  color: rgb(252, 252, 252);
+  cursor: pointer;
+  display: flex;
+  font-size: 2rem;
+  padding: 0.8rem;
+  text-align: center;
+  transition: ease-in-out 1s;
+}
+
+.feedback_btn_text {
+  font-size: 1rem;
+  opacity: 0;
+  position: absolute;
+}
+
+.feedback_config_btn:hover {
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px 3px rgba(161, 161, 161, 0.65);
+  transition: expansion ease-in-out 1s;
+  width: 10rem;
+}
+
+.feedback_btn .feedback_config_btn:hover .feedback_btn_text {
+  opacity: 1;
+  transform: translateX(2.5rem);
+  transition: ease-in 0.5s;
+}
+
+@keyframes expansion {
+
+  from {
+    border-radius: 100%;
+    width: 1rem;
+  }
+
+  to {
+    border-radius: 15px;
+    width: 10rem;
+  }
+
+}
