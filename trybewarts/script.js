@@ -38,7 +38,7 @@ function contador(e) {
   counter.innerText = rest;
 }
 
-textArea.addEventListener('keyup', contador);
+textArea.addEventListener('input', contador);
 
 const harryPotter = {
   optionContent() {

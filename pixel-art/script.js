@@ -49,9 +49,18 @@ function pintaPixel(event) {
     }
   }
 }
+function voltaPixel(event) {
+  for (let i = 0; i < vetorPixel.length; i += 1) {
+    if (event.target === vetorPixel[i]) {
+      vetorPixel[i].style.backgroundColor = 'rgb(255, 255, 255)';
+    }
+  }
+};
+
 function paintPixel() {
   for (let i = 0; i < vetorPixel.length; i += 1) {
     vetorPixel[i].addEventListener('click', pintaPixel);
+    vetorPixel[i].addEventListener('dblclick', voltaPixel);
   }
 }
 paintPixel();
