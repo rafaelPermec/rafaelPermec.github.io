@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.23441720.css",
+    "main.js": "/portfolio/static/js/main.53b02222.js",
+    "static/media/portfolio2.jpg": "/portfolio/static/media/portfolio2.3825add7638a67176b19.jpg",
+    "static/media/me.png": "/portfolio/static/media/me.5724c14863eaf6d893fb.png",
+    "static/media/portfolio5.png": "/portfolio/static/media/portfolio5.5ea4b751680a69312f06.png",
+    "static/media/portfolio1.jpg": "/portfolio/static/media/portfolio1.c289a9f9adcce112bb59.jpg",
+    "static/media/portfolio3.jpg": "/portfolio/static/media/portfolio3.74f0f1083aad6976daf4.jpg",
+    "static/media/portfolio6.jpg": "/portfolio/static/media/portfolio6.dd692da7fa7aabace5e7.jpg",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.74e2c14a0ffe75603ca0.pdf",
+    "static/media/portfolio4.jpg": "/portfolio/static/media/portfolio4.0ea52b52050d0a6634cd.jpg",
+    "static/media/me-2.jpg": "/portfolio/static/media/me-2.f64fa30cb73024c788fe.jpg",
+    "static/media/avatar-chris.jpg": "/portfolio/static/media/avatar-chris.f15634405a5a9ab742de.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.23441720.css.map": "/portfolio/static/css/main.23441720.css.map",
+    "main.53b02222.js.map": "/portfolio/static/js/main.53b02222.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23441720.css",
+    "static/js/main.53b02222.js"
+  ]
+}
